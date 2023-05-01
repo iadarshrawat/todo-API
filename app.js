@@ -1,9 +1,6 @@
-import { constants } from "buffer";
 import express from "express";
-import mongoose from "mongoose";
 import router from "./routes/user.js";
 import taskrouts from "./routes/task.js";
-import { connectdb } from "./data/database.js";
 import { config } from "dotenv";
 import cookieParser from "cookie-parser";
 import cors from "cors";

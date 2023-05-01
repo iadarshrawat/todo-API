@@ -9,7 +9,6 @@ app.use(router);
 connectdb();
 router.use(cookieParser());
 
-console.log(process.env.PORT);
 
 app.listen(4000, ()=>{
     console.log(`server is working in port:${process.env.PORT} in ${process.env.NODE_ENV} mode`);
