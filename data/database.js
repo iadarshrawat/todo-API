@@ -4,5 +4,5 @@ import mongoose from "mongoose";
 export const connectdb = ()=> mongoose.connect(process.env.MONGO_URI,{
     dbName:"API-Server",
 })
-.then(()=>{console.log('database is connected')})
+.then((c)=>console.log(`database is connected`))
 .catch((e)=>{console.log(e)});
